@@ -21,9 +21,14 @@ public class UserRegistration {
 		String lastName = "[A-z]{1}[a-z]{2,}";
 		String inputLastName = scanner.next();
 		
+		System.out.println("Enter Email Id: ");
+		String emailId = "[a-z]*.[a-z]+@[a-z]+.[a-z]{2,3}(.[a-z]{2,})";
+		String inputEmailId = scanner.next();
+		
 		UserRegistration userRegistration = new UserRegistration();
 		System.out.println(userRegistration.userName(firstName, input));
 		System.out.println(userRegistration.userName(lastName, inputLastName));
+		System.out.println(userRegistration.userName(emailId, inputEmailId));
 
 	}
 
