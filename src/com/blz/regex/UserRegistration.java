@@ -22,7 +22,8 @@ public class UserRegistration {
 		String inputLastName = scanner.next();
 		
 		System.out.println("Enter Email Id: ");
-		String emailId = "[a-z]*.[a-z]+@[a-z]+.[a-z]{2,3}(.[a-z]{2,})";
+		//String emailId = "[a-z]*.[a-z]+@[a-z]+.[a-z]{2,3}(.[a-z]{2,})";
+		String emailId = "[a-zA-z0-9][a-zA-z0-9_.]*@[a-zA-Z0-9]+([.][a-zA-z]+)+"; 
 		String inputEmailId = scanner.next();
 		
 		System.out.println("Enter Mobile Number: ");
