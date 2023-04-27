@@ -30,7 +30,8 @@ public class UserRegistration {
 		String inputmobileNumber = scanner.next();
 		
 		System.out.println("Enter Password");
-		String Password = "[A-za-z0-9]{8}$";
+		//String Password = "[A-za-z0-9]{8}$";
+		String Password = "((?=.*[A-Z]).{8,})";
 		String inputPassword = scanner.next();
 		
 		UserRegistration userRegistration = new UserRegistration();
